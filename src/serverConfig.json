@@ -1,0 +1,12 @@
+{
+    "serverPort" : 8888,
+    "ethProvider" : "YOUR ETH PROVIDER URL IN HERE WS / HTTP",
+    "tokenAddress" : "YOUR CONTRACT ADDRESS",
+    "database" : {
+        "host" : "YOUR HOST IN HERE",
+        "databaseName" : "YOUR DATABASE NAME IN HERE",
+        "port" : 9999,
+        "user" : "YOUR DB USER IN HERE",
+        "pw" : "YOUR DB PW IN HERE"
+    }
+}
