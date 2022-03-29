@@ -51,7 +51,15 @@ export class AppInstance {
                 pw: this.config.database.pw
             });
             
-            this.web3Obj = new web3(this.config.ethProvider);
+            this.web3Obj = new web3(new web3.providers.WebsocketProvider(this.config.ethProvider, {
+                timeout : 30000,
+                reconnect : {
+                    auto : true,
+                    delay : 5000,
+                    maxAttempts : 5,
+                    onTimeout : false
+                }
+            }));
 
             this.AddListener();
 
